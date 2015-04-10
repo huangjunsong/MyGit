@@ -66,6 +66,7 @@
     UIStoryboard *story = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:[NSBundle bundleWithPath:path]];
     addServerListTableViewController *add = [story instantiateViewControllerWithIdentifier:@"addServer"];
     [self.navigationController pushViewController:add animated:YES];
+    NSLog(@"test");
 }
 - (void)viewDidLayoutSubviews
 {
