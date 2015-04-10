@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  Cloudsoar3C
+//
+//  Created by Junsong Huang on 15/2/28.
+//  Copyright (c) 2015年 Junsong Huang. All rights reserved.
+//
+
+#ifndef Cloudsoar3C_PrefixHeader_pch
+#define Cloudsoar3C_PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "Util.h"
+
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DLog(...)
+#endif
+
+#endif
